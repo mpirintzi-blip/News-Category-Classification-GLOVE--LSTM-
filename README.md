@@ -5,11 +5,11 @@ News classification model using Deep Learning (LSTM) to categorize HuffPost head
 
 Αυτό το project υλοποιεί ένα μοντέλο Βαθιάς Μάθησης (Deep Learning) για την ταξινόμηση ειδήσεων σε 10 διαφορετικές κατηγορίες με βάση τους τίτλους και τις περιλήψεις τους. Το μοντέλο βασίζεται σε αρχιτεκτονική **LSTM (Long Short-Term Memory)** και έχει αναπτυχθεί με τη χρήση του **TensorFlow/Keras**.
 
-## 📊 Δεδομένα (Dataset)
+## Δεδομένα (Dataset)
 Χρησιμοποιήθηκε το [News Category Dataset](https://www.kaggle.com/datasets/rmisra/news-category-dataset) από το Kaggle, το οποίο περιλαμβάνει περίπου 210.000 τίτλους ειδήσεων από το HuffPost. Για τις ανάγκες του project επιλέχθηκαν οι εξής 10 κατηγορίες:
 * Politics, Wellness, Entertainment, Travel, Style & Beauty, Parenting, Healthy Living, Queer Voices, Food & Drink, Business.
 
-## 🛠️ Ροή Εργασιών (Workflow)
+##  Ροή Εργασιών (Workflow)
 1.  **Προεπεξεργασία Κειμένου**: 
     * Καθαρισμός κειμένου (πεζά, αφαίρεση σημείων στίξης, stopwords).
     * Stemming με τη χρήση του `SnowballStemmer` (NLTK).
@@ -23,12 +23,12 @@ News classification model using Deep Learning (LSTM) to categorize HuffPost head
     * Χρήση των callbacks `ReduceLROnPlateau` και `ModelCheckpoint`.
     * Διαχείριση της ανισορροπίας των κλάσεων (class imbalance) με `class_weights`.
 
-## 📈 Αποτελέσματα
+##  Αποτελέσματα
 Το μοντέλο πέτυχε συνολική ακρίβεια (**Accuracy**) **77%** στο test set.
 * **Precision**: Εξαιρετικά αποτελέσματα σε κατηγορίες όπως *Parenting* (0.95) και *Queer Voices* (0.85).
 * **Εργαλεία**: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow/Keras.
 
-## 🚀 Πώς να το τρέξετε
+##  Πώς να το τρέξετε
 1. Κατεβάστε το αρχείο `.ipynb`.
 2. Βεβαιωθείτε ότι έχετε εγκαταστήσει τις απαραίτητες βιβλιοθήκες:
    ```bash
